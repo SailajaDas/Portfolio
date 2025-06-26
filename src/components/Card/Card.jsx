@@ -1,0 +1,18 @@
+import React from 'react'
+import mern from '../../assets/mern.png'
+import java from '../../assets/java.png'
+import dsa from '../../assets/dsa.png'
+import './card.css'
+
+const Card = ({title,image}) => {
+  return (
+    <div className='card'>
+  <h1>{title}</h1>
+  <div className="hovercard">
+    <img src={image} alt={title} />
+  </div>
+    </div>
+  )
+}
+
+export default Card
