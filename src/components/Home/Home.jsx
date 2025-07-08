@@ -22,12 +22,11 @@ const Home = () => {
       duration: 1,
       opacity: 0,
     });
-    gsap.from(".righthome img",{
-      x:200,
+    gsap.from(".righthome img", {
+      x: 200,
       duration: 1,
       opacity: 0,
-
-    })
+    });
   });
   return (
     <div id="home">
@@ -46,7 +45,13 @@ const Home = () => {
               delaySpeed={1000}
             />
           </div>
-          <button>View Resume</button>
+          <a
+            href="https://github.com/SailajaDas/Resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>View Resume</button>
+          </a>
         </div>
       </div>
       <div className="righthome">

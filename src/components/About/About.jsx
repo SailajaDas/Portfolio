@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
-import mern from "../../assets/mern.png";
+import frontend from "../../assets/img1.png";
 import java from "../../assets/java.png";
-import dsa from "../../assets/dsa.png";
+import sql from "../../assets/sql2.jpg";
 import Card from "../Card/Card";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -14,7 +14,7 @@ const About = () => {
       x: -100,
       duration: 1,
       opacity: 0,
-      stagger:1,
+      stagger: 1,
       scrollTrigger: {
         trigger: ".circle",
         scroll: "body",
@@ -24,11 +24,11 @@ const About = () => {
         end: "top 30%",
       },
     });
-     gsap.from(".line", {
+    gsap.from(".line", {
       x: -100,
       duration: 1,
       opacity: 0,
-      stagger:1,
+      stagger: 1,
       scrollTrigger: {
         trigger: ".line",
         scroll: "body",
@@ -38,7 +38,7 @@ const About = () => {
         end: "top 30%",
       },
     });
-     gsap.from(".aboutdetails h1", {
+    gsap.from(".aboutdetails h1", {
       x: -100,
       duration: 1,
       opacity: 0,
@@ -51,7 +51,7 @@ const About = () => {
         end: "top 20%",
       },
     });
-     gsap.from(".aboutdetails ul", {
+    gsap.from(".aboutdetails ul", {
       y: 100,
       duration: 1,
       opacity: 0,
@@ -64,7 +64,7 @@ const About = () => {
         end: "top 20%",
       },
     });
-     gsap.from(".rightabout ", {
+    gsap.from(".rightabout ", {
       x: 100,
       duration: 1,
       opacity: 0,
@@ -106,21 +106,22 @@ const About = () => {
               </li>
             </ul>
           </div>
-
           <div className="education">
             <h1>Education</h1>
             <ul>
               <li>
-                <span>NAME</span>:SAILAJA DAS
+                <span>B.Tech</span>: Gandhi Institute for Education &
+                Technology, Baniatangi, Bhubaneswar (2021–2025) |{" "}
+                <strong>CGPA:</strong> 8.42
               </li>
               <li>
-                <span>AGE</span>:21 YEARS
+                <span>12th</span>: Shanti Institute of Management Higher
+                Secondary School, Cuttack (2019–2021) |{" "}
+                <strong>Percentage:</strong> 73%
               </li>
               <li>
-                <span>GENDER</span>:FEMALE
-              </li>
-              <li>
-                <span>LANGUAGE KNOWN</span>:HINDI,ENGLISH
+                <span>10th</span>: Premchand Bidyapitha, Kendrapara (2018–2019)
+                | <strong>Percentage:</strong> 68%
               </li>
             </ul>
           </div>
@@ -128,19 +129,25 @@ const About = () => {
           <div className="skills">
             <h1>Skills</h1>
             <ul>
-              <li>Java</li>
-              <li>React</li>
-              <li>SQL</li>
-              <li>DBMS</li>
+              <li>
+                <span>Frontend Development:</span> HTML5, CSS3, JavaScript
+                (ES7), React.js, Bootstrap, Tailwind CSS
+              </li>
+              <li>
+                <span>Backend Development:</span> Java
+              </li>
+              <li>
+                <span>Database:</span> SQL
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
       <div className="rightabout">
-        <Card title="MERN STACK DEVELOPER" image={mern} />
-        <Card title="JAVA" image={java} />
-        <Card title="DSA" image={dsa} />
+        <Card title="Frontend" image={frontend} />
+        <Card title="Backend" image={java} />
+        <Card title="Database" image={sql} />
       </div>
     </div>
   );
